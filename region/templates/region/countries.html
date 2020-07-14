@@ -1,0 +1,17 @@
+<title>Countries</title>
+</head>
+<body>
+<h1>Countries Lists</h1>
+ {% if data %}
+   
+    {% for country in data %}
+       <ul>
+         <li><a href="/region/country_selected/{{ country.id }}/">{{ country.country_name }}</a></li>
+       </ul>
+    {% endfor %}
+    
+{% else %}
+    <p>No countries are available.</p>
+{% endif %} 
+</body>
+</html>

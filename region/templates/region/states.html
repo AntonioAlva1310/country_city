@@ -1,0 +1,16 @@
+<body>
+<h1>States List</h1>
+
+  {% if data %}
+    <ul>
+      {% for state in data %}
+      
+          <li>{{ state.state_name }} </li>
+      
+      {% endfor %}
+     </ul>
+  {% else %}
+    <p>No Students are available.</p>
+  {% endif %}  
+</body>
+</html>

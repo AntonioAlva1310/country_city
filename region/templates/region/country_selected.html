@@ -1,0 +1,19 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Country Selected</title>
+</head>
+<body>
+
+ {% if country_selected %}
+    
+    <h1>{{ country_selected.country_name}}</h1>
+     {% for state in states_by_country %}
+         <ul>
+           <li>{{ state.state_name }}</li>
+         </ul>
+     {% endfor %}
+ {% else %}
+    <p>No Clasroom are available.</p>
+ {% endif %}  
+</body>
+</html>
